@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/9bc17173c2.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        body {
+            background-color: #e5e5ec;
+        }
+
+        i {
+            color: #111111;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            border: 1px solid #333333;
+            border-radius: 16px;
+            padding: 0 16px;
+            margin: 16px 0;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
+        li::before {
+            content: "";
+            height: 80px;
+            width: 0;
+            background: #6868ff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 16px;
+            transition: 0.5s ease;
+        }
+
+        li:nth-child(1):hover::before {
+            width: 20%;
+        }
+
+        li:nth-child(2):hover::before {
+            width: 40%;
+        }
+
+        li:nth-child(3):hover::before {
+            width: 60%;
+        }
+
+        li:nth-child(4):hover::before {
+            width: 80%;
+        }
+
+        li:nth-child(5):hover::before {
+            width: 100%;
+        }
+
+        li h2,
+        li i {
+            position: absolute;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <section class="container">
+
+        <h1>웹 과정 커리큘럼</h1>
+
+        <ul>
+            <li>
+                <h2>
+                    20%
+                    <i class="fa-brands fa-figma"></i>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    40%
+                    <i class="fa-brands fa-html5"></i>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    60%
+                    <i class="fa-brands fa-css"></i>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    80%
+                    <i class="fa-brands fa-js"></i>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    100%
+                    <i class="fa-brands fa-python"></i>
+                </h2>
+            </li>
+        </ul>
+
+    </section>
+
+</body>
+
+</html>

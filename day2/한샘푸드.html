@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9bc17173c2.js" crossorigin="anonymous"></script>
+    <style>
+        @font-face {
+            font-family: 'NanumSquareNeoBold';
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot);
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.ttf) format("truetype");
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 640px;
+            height: 472px;
+            background-color: #77987D;
+            position: relative;
+            border-radius: 32px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #111111;
+        }
+
+        .img_box {
+            width: 640px;
+            height: 240px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        figure img {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            border-radius: 32px;
+        }
+
+        .titlebox {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 40px;
+        }
+
+        h2 {
+            font-family:'NanumSquareNeoBold';
+            font-size: 20px;
+            color: #ffffff;
+        }
+
+        .desc {
+            font-family:'NanumSquareNeoBold';
+            font-size: 32px;
+            color: #ffffff;
+            padding: 0 40px;
+        }
+
+        .arrow {
+            width: 40px;
+            height: 40px;
+            background-color: #ffffff;
+            border-radius: 999px;
+            border: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="container">
+
+        <div class="box">
+            <a href="#">
+                <div class="titlebox">
+                <h2>위탁급식시스템</h2>
+                <button class="arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+                <p class="desc">급식업무 일체를 위임받아<br>체계적으로 운영하는 전문급식서비스</p>
+            
+                <figure class="img_box">
+                    <img src="https://ncryk7.mycafe24.com/inno1.jpg" alt="">
+                </figure>
+            </a>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
