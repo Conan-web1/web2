@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @font-face {
+            font-family: 'Ownglyph_ParkDaHyun';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            margin: 100px 0;
+        }
+
+        section {
+            display: flex;
+            position: relative;
+        }
+
+        h2 {
+            position: absolute;
+            top: -60px;
+            /* left: 10%; */
+            width: 100%;
+            text-align: center;
+            font-family: 'Ownglyph_ParkDaHyun';
+            font-size: 100px;
+            z-index: 1;
+        }
+
+        figure>img {
+            transform: translateX(-100%);
+            animation-name: img_show;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes img_show {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(0%);
+            }
+        }
+
+        .text_box {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section>
+        <h2>
+            egg makes better ♤ ♧ † £ ¢
+        </h2>
+        <figure>
+            <img src="	https://eggdrop.com/assets/images/main/img_better.jpg" alt="">
+        </figure>
+        <div class="text_box">
+            <h3>일상의 수준을 높이다</h3>
+            <p>
+                현대인에ㅔ 필요한 비타민철분<br>
+                ㄴ어ㅏ리;ㅁㄴㅇ러ㅏ민ㅇ러ㅏㅁㄴ<br>
+                ㅇ럼;ㄴ아럼;나이러미낭럼;ㄴㅇ라ㅣ<br>
+                ㅓㅁㄴ라이;ㅓㅁㄴ
+                <br>
+                <br>
+                asdfasdfasdfasdfasdfasdfasdfa<br>
+                basdfasdfasdvazxcvqwevavwawev<br>
+                asdfadsfasdfasdfasdfasdfasdfa
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>

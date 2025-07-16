@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/9bc17173c2.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 40px;
+            background-color: #6868FF;
+            color: #ffffff;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 80px;
+        }
+
+        button {
+            border: none;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        i {
+            background-color: none;
+        }
+
+        button:hover {
+            animation: turn 1s;
+        }
+
+        @keyframes turn {
+            from {
+                transform: rotate(0deg);
+            }
+            
+            to {
+                transform: rotate(1080deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            LOGO
+        </h1>
+        <ul>
+            <li>메뉴1234</li>
+            <li>메뉴1234</li>
+            <li>메뉴1234</li>
+            <li>메뉴1234</li>
+        </ul>
+
+        <div class="btn_box">
+            <button>
+                <i class="fa-solid fa-plus fa-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+</body>
+
+</html>
