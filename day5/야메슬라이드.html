@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./common.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        button {
+            margin: 50px auto;
+            display: block;
+            padding: 16px 24px;
+            font-size: 16px;
+            border-radius: 999px;
+            background-color: #6868ff;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        
+
+        ul {
+            width: 1200px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        li {
+            background-size: cover;
+            min-width: 268px;
+            height: 160px;
+            margin: 0 16px;
+        }
+
+        button:focus + ul li {
+            animation: slide 5s forwards;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        li:nth-child(1) {
+            background:url(https://ncryk7.mycafe24.com/tiger1.jpg);
+        }
+        li:nth-child(2) {
+            background:url(https://ncryk7.mycafe24.com/tiger2.jpg);
+        }
+        li:nth-child(3) {
+            background:url(https://ncryk7.mycafe24.com/tiger3.jpg);
+        }
+        li:nth-child(4) {
+            background:url(https://ncryk7.mycafe24.com/eagle1.jpg);
+        }
+        li:nth-child(5) {
+            background:url(https://ncryk7.mycafe24.com/eagle2.jpg);
+        }
+        li:nth-child(6) {
+            background:url(https://ncryk7.mycafe24.com/eagle3.jpg);
+        }
+        li:nth-child(7) {
+            background:url(https://ncryk7.mycafe24.com/tiger1.jpg);
+        }
+        li:nth-child(8) {
+            background:url(https://ncryk7.mycafe24.com/tiger2.jpg);
+        }
+
+        @keyframes slide {
+            20% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-1200px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <button>
+            동물들이 지나가요
+        </button>
+        <ul class="d_flex">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+    
+</body>
+</html>

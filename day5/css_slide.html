@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container {
+            width: 1200px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        button {
+            padding: 24px 32px;
+            font-size: 24px;
+            font-weight: 500;
+            border: 1px solid #e5e5ec;
+            border-radius: 8px;
+            background-color: #799176;
+            box-shadow: 0 4px 12px rgba(17, 17, 17, 0.4);
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+            list-style: none;
+            transform: translateX(1020px);
+            transition: all 2s ease;
+        }
+
+        /* .wrapper:hover {
+            transform: translateX(-1040px);
+        } */
+        
+        button:focus .wrapper{
+            transform: translateX(-1040px);
+        }
+
+        .photo {
+            width: 300px;
+            height: 200px;
+            background-size: cover;
+        }
+
+        .photo:nth-child(1) {
+            background-image: url(https://ncryk7.mycafe24.com/tiger1.jpg);
+        }
+        .photo:nth-child(2) {
+            background-image: url(https://ncryk7.mycafe24.com/tiger2.jpg);
+        }
+        .photo:nth-child(3) {
+            background-image: url(https://ncryk7.mycafe24.com/tiger3.jpg);
+        }
+        .photo:nth-child(4) {
+            background-image: url(https://ncryk7.mycafe24.com/eagle1.jpg);
+        }
+        .photo:nth-child(5) {
+            background-image: url(https://ncryk7.mycafe24.com/eagle2.jpg);
+        }
+        .photo:nth-child(6) {
+            background-image: url(https://ncryk7.mycafe24.com/eagle3.jpg);
+        }
+        .photo:nth-child(7) {
+            background-image: url(https://ncryk7.mycafe24.com/tiger1.jpg);
+        }
+        .photo:nth-child(8) {
+            background-image: url(https://ncryk7.mycafe24.com/tiger2.jpg);
+        }
+        .photo:nth-child(9) {
+            background-image: url(https://ncryk7.mycafe24.com/tiger3.jpg);
+        }
+        .photo:nth-child(10) {
+            background-image: url(https://ncryk7.mycafe24.com/eagle1.jpg);
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <section class="container">
+
+        <button>동물들이 지나가요</button>
+
+        <ul class="wrapper">
+
+            <li class="photo"></li>
+            <li class="photo"></li>
+            <li class="photo"></li>
+            <li class="photo"></li>
+            <li class="photo"></li>
+            <li class="photo"></li>
+            <li class="photo"></li>
+            <li class="photo"></li>
+            <li class="photo"></li>
+            <li class="photo"></li>
+
+        </ul>
+
+    </section>
+    
+</body>
+</html>
