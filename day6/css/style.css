@@ -136,3 +136,203 @@ header {
     color: var(--main-green);
     font-weight: 700;
 }
+
+.bg_img_container {
+    background-image: url(../image/backgroundimg.jpg);
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    background-size: cover;
+    gap: 32px;
+}
+
+.bg_img_container > h2 {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.bg_img_container > p {
+    line-height: 1.5;
+}
+
+/* main_container 끄ㅜㅌ */
+
+/* about_container 시작작작 */
+
+.about_container {
+    margin-top: var(--section-margin-top) 0;
+    display: flex;
+    justify-content: center;
+}
+
+.about_container > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+.about_list > figure {
+    width: 300px;
+    height: 160px;
+    background-size: cover;
+}
+
+.list_img_1 {
+    background: url(../image/거북이북이.jpg);
+}
+.list_img_2 {
+    background: url(../image/거북이북이.jpg);
+}
+.list_img_3 {
+    background: url(../image/거북이북이.jpg);
+}
+
+.about_list > h2 {
+    font-size: 24px;
+    margin: 16px 0;
+}
+
+.about_list > p {
+    font-size: 14px;
+    margin: 16px 0;
+    line-height: 20px;
+}
+
+.band_recommend {
+    background: var(--background);
+    padding: 50px 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.recommend_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+.recommend_ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recommend_list {
+    width: 500px;
+    margin: 12px 0;
+    display: flex;
+    gap: 12px;
+}
+
+.recommend_list > figure {
+    background: url(../image/거북이북이.jpg);
+    width: 93px;
+    height: 93px;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.recommend_text_box > h2 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.recommend_text_box > p {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: #767676;
+}
+
+.recommend_text_box > div > span {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 8px 0;
+    color: #a5a5a5;
+}
+
+.recommend_text_box > button {
+    padding: 2px 8px;
+    border: 1px solid #e5e5ec;
+    background-color: #ffffff;
+    border-radius: 999px;
+    margin-top: 8px;
+    color: #767676;
+}
+
+.recommend_text_box > button > span {
+    color: var(--font-black222);
+    font-weight: 600;
+}
+
+/* 끝 */
+
+/* 시작 */
+
+.download {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.download_left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.download_left > figure {
+    background-image: url(../image/거북이북이.jpg);
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+}
+
+.download_left > div > h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.download_store > a {
+    text-decoration: none;
+    background-image: url(https://ssl.pstatic.net/cmstatic/webclient/band-we…s/spr_svg/new/button-android.svg?ts=1751422996971);
+
+}
+
+/* 끝 */
+
+/* 시자 */
+
+footer {
+    background: #2A3038;
+    padding: 32px;
+}
+
+footer > ul {
+    display: flex;
+    font-size: 14px;
+    width: 1000px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+footer > ul a {
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+footer > p {
+    color: #f9f9f9;
+    width: 1000px;
+    margin: 32px auto 0 auto;
+}
