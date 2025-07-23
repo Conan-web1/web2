@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .box:nth-child(1) {
+            width: 100%;
+            background: #6868ff;
+
+        }
+
+        .box:nth-child(2) {
+            display: none;
+            background: #2e50e2;
+
+        }
+
+        .box:nth-child(3) {
+            display: none;
+            background: #a50000;
+
+        }
+
+        .box:nth-child(4) {
+            display: none;
+            background: #505050
+        }
+
+        @media(max-width:1280px) {
+            .box:nth-child(1) {
+                display: none;
+            }
+
+            .box:nth-child(2) {
+                display: block;
+            }
+        }
+
+        @media(max-width:760px) {
+            .box:nth-child(2) {
+                display: none;
+            }
+
+            .box:nth-child(3) {
+                display: block;
+            }
+        }
+
+        @media(max-width:360px) {
+            .box:nth-child(3) {
+                display: none;
+            }
+
+            .box:nth-child(4) {
+                display: block;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="box">+1280</div>
+    <div class="box">760-1280</div>
+    <div class="box">360-760</div>
+    <div class="box">360</div>
+
+</body>
+
+</html>
