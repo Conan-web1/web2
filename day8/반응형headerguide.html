@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,6 @@
     <script src="https://kit.fontawesome.com/9bc17173c2.js" crossorigin="anonymous"></script>
 
     <style>
-
         * {
             padding: 0;
             margin: 0;
@@ -17,6 +17,7 @@
         body {
             background: url(https://www.dapharm.com/common/images/banner/c0d93c881ae84e5dbecf30f4f1362452.jpg);
             background-size: cover;
+            background-position: 1%;
         }
 
         ul {
@@ -32,17 +33,21 @@
             padding: 8px 0;
         }
 
+        .pc_bottom_menu {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+        }
+
         a {
             text-decoration: none;
             color: #212121;
             padding: 4px 8px;
         }
 
-        .logo {
+        .logo>img {
             width: 146px;
             height: 26px;
-            background-image: url(https://www.dapharm.com/img/logo_black-e98fc715585a7f605fb6de8694ddf54d.svg);
-            background-size: cover;
         }
 
         .pc_bottom_content {
@@ -59,31 +64,110 @@
             gap: 16px;
         }
 
+        .search_box {
+            width: 280px;
+            height: 48px;
+            border: 1px solid #222222;
+            border-radius: 999px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 24px;
+        }
+
+        .search_box input {
+            border: none;
+            background: none;
+        }
+
+        .mo_logo>img {
+            width: 135px;
+            height: 24px;
+        }
+
+        .mo_header {
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 32px;
+            border-top: 1px solid #222222;
+            border-bottom: 1px solid #222222;
+            margin-top: 8px;
+        }
+
+        .mo_right_wrapper {
+            display: flex;
+            gap: 16px;
+        }
+
+        @media(max-width: 1200px) {
+            .pc_bottom_menu {
+                gap: 16px;
+            }
+
+            .logo>img {
+                width: 100px;
+                height: 18px;
+            }
+
+            .search_box {
+                padding: 8px 12px;
+            }
+
+            .pc_bottom_content ul a {
+                font-size: 10px;
+            }
+
+            .bottom_right_wrapper {
+                gap: 12px;
+            }
+
+            .search_box>input {
+                width: 120px;
+            }
+        }
+
+        @media(max-width: 796px) {
+            .pc_header {
+                display: none;
+            }
+
+            .mo_header {
+                display: flex;
+            }
+
+            body {
+                background: url(./동아제약img.svg);
+                background-size: cover;
+                background-position: 25%;
+            }
+        }
     </style>
 </head>
+
 <body>
 
     <header>
         <div class="pc_header">
 
-                <ul class="pc_top_content">
-                    <li>
-                        <a href="#">준법경영</a>
-                    </li>
-                    <li>
-                        <a href="#">판매약국찾기</a>
-                    </li>
-                    <li>
-                        <a href="#">감사제보하기</a>
-                    </li>
-                </ul>
+            <ul class="pc_top_content">
+                <li>
+                    <a href="#">준법경영</a>
+                </li>
+                <li>
+                    <a href="#">판매약국찾기</a>
+                </li>
+                <li>
+                    <a href="#">감사제보하기</a>
+                </li>
+            </ul>
 
             <div class="pc_bottom_content">
                 <h1 class="logo">
-                    
+                    <img src="./동아제약img.svg" alt="동아제약 로고">
                 </h1>
                 <nav>
-                    <ul>
+                    <ul class="pc_bottom_menu">
                         <li>
                             <a href="#">회사소개</a>
                         </li>
@@ -114,22 +198,24 @@
                     <div class="search_box">
                         <input type="text" placeholder="검색어 입력">
                         <!-- 검색아이콘 -->
-                        <i class="fa-regular fa-magnifying-glass"></i>
+                        <i class="fa-regular fa-magnifying-glass fa-xl"></i>
                     </div>
                     <div>
                         <!-- 아이콘 들어갈 곳 -->
-                        <i class="fa-regular fa-globe"></i>   
+                        <i class="fa-regular fa-globe fa-xl"></i>
                     </div>
                     <div>
                         <!-- 아이콘 들어갈 곳 -->
-                        <i class="fa-regular fa-bars"></i>
+                        <i class="fa-regular fa-bars fa-xl"></i>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="mo_header">
-            <h2></h2>
+            <h2 class="mo_logo">
+                <img src="./동아제약img.svg" alt="">
+            </h2>
             <div class="mo_right_wrapper">
 
                 <div>
@@ -145,6 +231,7 @@
             </div>
         </div>
     </header>
-    
+
 </body>
+
 </html>

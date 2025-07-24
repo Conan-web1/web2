@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/9bc17173c2.js" crossorigin="anonymous"></script>
+
+    <style>
+        .pc_header_container {
+            display: flex;
+            justify-content: space-between;
+            width: 1316px;
+            height: 91px;
+            background-color: #ffffff;
+            margin: 0 auto;
+            border-bottom: 1px solid #d7d7d7;
+        }
+
+        .pc_header_menubox {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .pc_header_menu {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #111111;
+        }
+
+        .pc_header_util {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .pc_header_util_icon {
+            width: 36px;
+            height: 36px;
+        }
+
+        .content_future {
+            display: flex;
+            justify-content: space-between;
+            width: 1316px;
+            height: 72px;
+            background-color: #ffffff;
+            margin: 0 auto;
+            border-bottom: 1px solid #d7d7d7;
+        }
+
+        .content_logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .content_download_wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .content_download_line {
+            background-color: #d7d7d7;
+            height: 1px;
+            width: 16px;
+            transform: rotate(90deg);
+        }
+
+        .content_download {
+            font-size: 16px;
+            font-weight: 400;
+            color: #111111;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="pc_header_container">
+
+        <h1 class="pc_header_logo">kakao</h1>
+
+        <ul class="pc_header_menubox">
+
+            <li>
+                <a class="pc_header_menu" href="#">
+                    소개
+                </a>
+            </li>
+            <li>
+                <a class="pc_header_menu" href="#">
+                    기술과 서비스
+                </a>
+            </li>
+            <li>
+                <a class="pc_header_menu" href="#">
+                    약속과 책임
+                </a>
+            </li>
+            <li>
+                <a class="pc_header_menu" href="#">
+                    소식
+                </a>
+            </li>
+            <li>
+                <a class="pc_header_menu" href="#">
+                    투자정보
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="pc_header_util">
+            <div class="pc_header_util_icon">
+                <i class="fa-light fa-magnifying-glass fa-xl"></i>
+            </div>
+            <div class="pc_header_util_icon">
+                <i class="fa-light fa-globe fa-xl"></i>
+            </div>
+            <div class="pc_header_util_icon">
+                <i class="fa-light fa-moon fa-xl"></i>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="content_future">
+
+        <div class="content_logo">카카오톡</div>
+
+        <div class="content_download_wrapper">
+
+            <a href="#" class="content_download">카톡 안녕가이드</a>
+            <div class="content_download_line"></div>
+            <a href="#" class="content_download">카톡설명서</a>
+            <div class="content_download_line"></div>
+            <a href="#" class="content_download">다운로드</a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
